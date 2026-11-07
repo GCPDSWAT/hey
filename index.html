@@ -3,138 +3,195 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nova Websites | Agency</title>
+  <meta name="description" content="NOVA Websites designs modern websites for businesses and creators.">
+  <title>NOVA Websites | Build Your Online Presence</title>
   <style>
-    body { background-color:#06080c!important; color:#f3f4f6; font-family:Arial; margin:0; padding-bottom:50px; }
-    header { background-color:#06080c; padding:15px 30px; display:flex; justify-content:space-between; border-bottom:1px solid #141a29; }
-    nav a { color:#8a94a6; text-decoration:none; margin-left:15px; font-size:13px; font-weight:bold; }
-    .frame { max-width:680px; margin:20px auto; padding:0 15px; }
-    .card { background-color:#0b111e; border:1px solid #141a29; border-radius:12px; padding:20px; margin-bottom:20px; }
-    h1 { font-size:30px; font-weight:800; color:#ffffff; margin:5px 0 15px 0; }
-    h2 { font-size:20px; color:#ffffff; margin:0 0 10px 0; }
-    p { color:#8a94a6; font-size:13px; line-height:1.5; margin:0 0 15px 0; }
-    .box-row { display:flex; gap:10px; justify-content:space-between; margin-bottom:15px; }
-    .sq-box { width:48%; border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:15px; box-sizing:border-box; background:#0b111e; }
-    .sq-box.blue-border { border-color:#3b82f6; }
-    .sq-title { font-size:13px; font-weight:bold; color:#ffffff; text-transform:uppercase; }
-    .sq-cost { font-size:24px; font-weight:800; color:#3b82f6; margin:5px 0; }
-    .sq-desc { color:#8a94a6; font-size:11px; }
-    .mail-box { background-color:#070c14; border:1px solid rgba(255,255,255,0.05); padding:12px; border-radius:6px; margin-bottom:15px; font-size:13px; font-family:monospace; }
-    .dotted-alert { background-color:#070c14; border:1px dashed #3b82f6; border-radius:6px; padding:12px; margin-bottom:15px; font-size:12px; color:#8a94a6; }
-    .status-alert { background: rgba(59, 130, 246, 0.1); border: 1px solid #3b82f6; padding: 15px; border-radius: 6px; text-align: center; color: #60a5fa; font-weight: bold; margin-bottom: 20px; font-size: 14px; }
-    table { width:100%; border-collapse:collapse; text-align:left; font-size:12px; margin-top:15px; }
-    th, td { padding:8px; border-bottom:1px solid rgba(255,255,255,0.05); }
-    th { color:#3b82f6; background-color:#070c14; }
-  </style>
-</head>
-<body>
+    :root {
+      --bg-black: #06080c;
+      --bg-dark-blue: #0b111e;
+      --accent-blue: #3b82f6;
+      --text-main: #f3f4f6;
+      --text-muted: #8a94a6;
+      --card-bg: #0d1527;
+      --input-bg: #070c14;
+    }
 
-  <header>
-    <div style="font-weight:bold; color:#ffffff;"><span style="background:#3b82f6; padding:2px 6px; border-radius:4px; font-family:monospace; margin-right:5px;">N</span>NOVA WEBSITES</div>
-    <nav><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#request">Contact</a></nav>
-  </header>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
 
-  <div class="frame">
+    html { scroll-behavior: smooth; }
 
-    <!-- KEYBOARD BACKDOOR CONTROL NOTICE -->
-    <div class="status-alert">
-      ⌨️ KEYBOARD BACKDOOR ACTIVE:<br>
-      Press the <span style="color:#ffffff; background:#3b82f6; padding:2px 6px; border-radius:3px;">A</span> key on your physical keyboard to automatically open the Admin Dashboard!
-    </div>
+    body {
+      background-color: var(--bg-black);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding-bottom: 6rem;
+    }
 
-    <div class="card">
-      <small style="color:#8a94a6; font-weight:bold;">● DIGITAL DESIGN STUDIO</small>
-      <h1>Your vision. Our code.<br><span style="color:#3b82f6;">One powerful website.</span></h1>
-      <p>Nova Websites creates modern, responsive layouts that help platforms stand out, connect with target users, and scale dynamically.</p>
-    </div>
+    /* Header Bar Menu */
+    .header {
+      background-color: rgba(6, 8, 12, 0.95);
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
 
-    <div class="card" id="services">
-      <h2>We turn ideas into online experiences.</h2>
-      <p>Your website layout is often the first thing a user sees. We help make that tracking footprint clear, polished, and memorable.</p>
-      <div style="font-size:13px; line-height:1.6; color:#f3f4f6;">
-        <div><b>🔷 Custom web design:</b> Distinctive layouts built perfectly for your brand preferences.</div>
-        <div><b>🔳 Responsive development:</b> Layout setups configured cleanly for mobile devices.</div>
-        <div><b>↗ Launch support:</b> Framework assistance getting server assets ready to go live.</div>
-      </div>
-    </div>
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #ffffff;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
 
-    <div class="card" id="pricing">
-      <h2>Find the right fit for your next step.</h2>
-      <p>Simple starting packages. Tiers can be configured directly inside the submission form.</p>
-      
-      <div class="box-row">
-        <div class="sq-box"><div class="sq-title">01 / Just One Game</div><div class="sq-cost">$15</div><div class="sq-desc">Single game focus layout.</div></div>
-        <div class="sq-box blue-border"><div class="sq-title" style="color:#3b82f6;">02 / Proxy Website</div><div class="sq-cost">$20</div><div class="sq-desc">High-speed unblocked routing nodes.</div></div>
-      </div>
-      <div class="box-row">
-        <div class="sq-box"><div class="sq-title">03 / Coding Website</div><div class="sq-cost">$25</div><div class="sq-desc">Integrated dark code display blocks.</div></div>
-        <div class="sq-box"><div class="sq-title">04 / Full Website</div><div class="sq-cost">$30</div><div class="sq-desc">Multi-page infrastructure assets.</div></div>
-      </div>
-    </div>
+    .logo-icon {
+      background-color: #3b82f6;
+      color: white;
+      width: 24px;
+      height: 24px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 0.85rem;
+      border-radius: 4px;
+      margin-right: 10px;
+    }
 
-    <div class="card" id="request" style="border: 1px solid rgba(59, 130, 246, 0.4);">
-      <h2>Have a project in mind?</h2>
-      
-      <div class="mail-box">
-        <span style="color:#3b82f6;">✉ GET IN TOUCH</span><br>
-        • dannerj1@icloud.com<br>
-        • GCPDswat@icloud.com
-      </div>
+    .logo-light { font-weight: 300; color: var(--text-muted); }
 
-      <div class="dotted-alert">
-        <b>💼 Grade-Based Compensation Map Protocol</b><br>
-        • 7th & 8th Graders: Find me inside the gym arena to finalize payments.<br>
-        • 6th Graders: Email us to establish a school meeting drop layout spot.
-      </div>
-      <p style="color:#8a94a6; font-size:12px; margin:0;">Form inputs are displayed above. Use your email app to reach out directly while screen layout selection mode is frozen by Code AI.</p>
-    </div>
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
 
-    <!-- DYNAMIC PIPELINE LOCK CARD -->
-    <div class="card" id="admin-section" style="border: 1px solid #3b82f6;">
-      <h2>Admin Dashboard Portal</h2>
-      <p id="lockStatusMessage" style="color:#ef4444; font-weight:bold; margin:0;">🔒 Dashboard locked. Press the 'A' key on your keyboard to force unlock.</p>
+    .nav-button {
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      color: #ffffff !important;
+    }
 
-      <div id="adminLogView" style="display:none; text-align:left; margin-top:20px; border-top:1px solid #141a29; padding-top:15px;">
-        <h3 style="color:#3b82f6; font-size:14px; margin:0 0 10px 0;">Active Request Pipeline Queue:</h3>
-        <table id="logTable">
-          <thead>
-            <tr><th>Client</th><th>Email</th><th>Grade</th><th>Tier</th><th>Status</th></tr>
-          </thead>
-          <tbody id="tableBodyTarget"></tbody>
-        </table>
-      </div>
-    </div>
+    .section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
 
-    <footer style="margin-top:30px; padding-top:15px; border-top:1px solid #141a29; display:flex; justify-content:space-between; font-size:11px; color:#8a94a6;">
-      <div><b>NOVA WEBSITES MATRIX</b></div>
-      <div>© 2026 Studio Platform. All rights reserved.</div>
-    </footer>
+    .eyebrow {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
 
-  </div>
+    .section-intro {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+      gap: 2rem;
+    }
 
-  <script>
-    let datastoreArray = [
-      { name: "Tyler K.", email: "tyler6@icloud.com", grade: "6th Grade", tier: "Proxy Site ($20)", status: "Pending Pay" }
-    ];
+    .section-intro h2 { font-size: 2.5rem; font-weight: 800; line-height: 1.1; }
+    .section-intro .blue { color: var(--accent-blue); }
+    .section-intro p { max-width: 450px; color: var(--text-muted); }
 
-    // Absolute Key Listener Backdoor bypassing frozen canvas mouse layers entirely
-    window.addEventListener('keydown', function(event) {
-      // If the user strikes the letter 'A' or 'a' on their device keyboard
-      if (event.key === 'a' || event.key === 'A') {
-        const messageText = document.getElementById('lockStatusMessage');
-        if (messageText) {
-          messageText.innerHTML = "🔓 Backdoor Override Success: Logs unlocked directly via keyboard hook!";
-          messageText.style.color = "#10b981";
-        }
-        
-        document.getElementById('adminLogView').style.display = 'block';
-        const tbody = document.getElementById('tableBodyTarget');
-        if (tbody) {
-          tbody.innerHTML = '<tr><td><b>'+datastoreArray[0].name+'</b></td><td>'+datastoreArray[0].email+'</td><td><font color="#3b82f6">'+datastoreArray[0].grade+'</font></td><td>'+datastoreArray[0].tier+'</td><td><span style="background:#1e3a8a;color:#93c5fd;padding:2px 6px;border-radius:4px;font-weight:bold;">'+datastoreArray[0].status+'</span></td></tr>';
-        }
-      }
-    });
-  </script>
-</body>
-</html>
+    /* Hero Unit Area */
+    .hero { display: flex; justify-content: space-between; align-items: center; gap: 4rem; padding-top: 6rem; }
+    .hero-content { flex: 1.2; }
+    .hero-content h1 { font-size: 3.5rem; font-weight: 800; line-height: 1.1; margin-bottom: 1.5rem; }
+    .gradient-text { color: var(--accent-blue); }
+    .hero-description { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 2.5rem; max-width: 500px; }
+    .hero-buttons { display: flex; gap: 1rem; margin-bottom: 2rem; }
 
+    .btn { padding: 0.8rem 1.8rem; border-radius: 4px; font-weight: 600; text-decoration: none; font-size: 0.95rem; display: inline-block; cursor: pointer; border: none; }
+    .btn-primary { background-color: var(--accent-blue); color: white; }
+    .btn-ghost { border: 1px solid rgba(255, 255, 255, 0.15); color: white; background: transparent; }
+    .btn-outline { border: 1px solid rgba(255, 255, 255, 0.3); color: white; background: transparent; }
+
+    .hero-visual { flex: 1; }
+    .browser { background-color: var(--bg-dark-blue); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 8px; overflow: hidden; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); }
+    .browser-bar { background-color: #070c14; padding: 0.75rem 1rem; display: flex; align-items: center; border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+    .browser-dots i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background-color: rgba(255, 255, 255, 0.2); margin-right: 4px; }
+    .browser-bar span { margin-left: 20px; font-size: 0.75rem; color: var(--text-muted); }
+    .browser-page { padding: 2.5rem; }
+    .mock-brand { font-size: 0.8rem; font-weight: 700; margin-bottom: 2rem; }
+    .mock-brand small { float: right; font-weight: 400; color: var(--text-muted); }
+    .mock-title { font-size: 2.2rem; font-weight: 800; line-height: 1.2; margin-bottom: 1rem; }
+    .mock-title em { color: var(--accent-blue); font-style: normal; }
+
+    .marquee { border-top: 1px solid rgba(255, 255, 255, 0.08); border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding: 1rem 0; margin: 3rem 0; }
+    .marquee div { display: flex; justify-content: space-around; color: var(--text-muted); font-size: 0.75rem; font-weight: 700; letter-spacing: 2px; }
+
+    .service-grid { display: flex; gap: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 2.5rem; }
+    .service-card h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+    .service-card p { color: var(--text-muted); font-size: 0.95rem; }
+
+    /* Work Elements Grid */
+    .portfolio { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+    .project-wide { grid-column: span 2; }
+    .project-art { border-radius: 8px; padding: 3rem; min-height: 300px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid rgba(255, 255, 255, 0.05); }
+    .art-tech { background: linear-gradient(135deg, #0a1c36 0%, #0d1527 100%); }
+    .art-fitness { background: #16161a; }
+    .art-creative { background: #0c0a12; }
+    .art-nav { font-size: 0.7rem; color: var(--text-muted); letter-spacing: 1px; }
+    .art-big { font-size: 2.5rem; font-weight: 900; line-height: 1.1; }
+    .art-big span { color: var(--accent-blue); }
+    .art-caption { font-size: 0.7rem; color: var(--text-muted); }
+    .project-caption { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
+    .project-caption h3 { font-size: 1.1rem; }
+    .project-caption p { font-size: 0.85rem; color: var(--text-muted); }
+
+    /* Pricing Plans Configuration Columns */
+    .pricing-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
+    .price-card { background-color: var(--bg-dark-blue); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 8px; padding: 2.5rem 1.5rem; position: relative; }
+    .price-card.featured { border-color: var(--accent-blue); }
+    .popular { position: absolute; top: -12px; right: 15px; background-color: var(--accent-blue); color: white; font-size: 0.65rem; font-weight: 700; padding: 3px 8px; border-radius: 2px; }
+    .plan-label { font-size: 0.7rem; color: var(--text-muted); letter-spacing: 1px; margin-bottom: 0.5rem; }
+    .price-card h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+    .price-card p { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 2rem; min-height: 40px; }
+    .price { font-size: 2.5rem; font-weight: 800; color: #fff; margin-bottom: 1.5rem; }
+    .price small { font-size: 0.85rem; color: var(--text-muted); font-weight: 400; }
+    .price-card ul { list-style: none; margin-bottom: 2rem; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;}
+    .price-card ul li { font-size: 0.85rem; margin-bottom: 0.5rem; color: var(--text-main); }
+    .price-card .btn { width: 100%; text-align: center; }
+
+    /* Client Feedback Blocks */
+    .review-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .review { background-color: var(--bg-dark-blue); border: 1px solid rgba(255, 255, 255, 0.05); padding: 2rem; border-radius: 6px; }
+    blockquote { font-size: 0.95rem; font-style: italic; margin-bottom: 1.5rem; }
+    .review b { display: block; font-size: 0.9rem; }
+    .review small { color: var(--text-muted); font-size: 0.75rem; }
+
+    /* Project Forms Workspace Configuration Layouts */
+    .order-section { display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; }
+    .payment-instructions-card { background: rgba(59, 130, 246, 0.03); border: 1px dashed rgba(59, 130, 246, 0.3); padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem; }
+    .payment-instructions-card h4 { margin-bottom: 0.5rem; color: #fff; }
+    .payment-instructions-card p { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+    .email-card { background-color: var(--bg-dark-blue); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 6px; padding: 1.5rem; display: flex; align-items: center; gap: 1rem; }
+    .email-card span { font-size: 1.5rem; color: var(--accent-blue); }
+    .email-card b { display: block; color: #fff; font-size: 0.95rem; }
+    .order-form { background-color: var(--bg-dark-blue); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 8px; padding: 2.5rem; }
+    .form-heading { display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255, 255, 255, 0.05); padding-bottom: 1rem; margin-bottom: 1.5rem; }
+    .form-row { display: flex; gap: 1rem; }
+    .order-form label { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.25rem; width: 100%; font-size: 0.85rem; color: var(--text-muted); font-weight: 600; }
+    .order-form input, .order-form select, .order-form textarea { padding: 0.85rem; background-color: var(--input-bg); border: 1px solid rgba(255, 255, 255, 0.08); color: white; border-radius: 4px; font-size: 0.9rem; width: 100%; }
+
+    .final-cta { background-color: var(--bg-dark-blue); padding: 4rem; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; margin-top: 4rem; }
